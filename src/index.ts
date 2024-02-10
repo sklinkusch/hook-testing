@@ -1,8 +1,8 @@
 import { useLayoutEffect, useState } from 'react';
 import { AdminProps } from 'react-admin';
 import { useLocalStorage } from 'usehooks-ts';
-import { themeOptions as darkTheme } from 'assets/dark';
-import { themeOptions as lightTheme } from 'assets/light';
+import { themeOptions as darkTheme } from './assets/dark.ts';
+import { themeOptions as lightTheme } from './assets/light.ts';
 
 const getTheme = (displayMode = 1) => {
   return displayMode === 1 ? 'dark' : 'light';
