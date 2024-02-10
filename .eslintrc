@@ -5,10 +5,10 @@
     "ecmaVersion": 2021,
     "project": true,
     "ecmaFeatures": {
-      "jsx": true
-    }
+      "jsx": true,
+    },
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "jsx-a11y", "prettier"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "jsx-a11y", "prettier", "jsonc"],
   "extends": [
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -17,7 +17,8 @@
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended",
-    "prettier"
+    "plugin:jsonc/recommended",
+    "prettier",
   ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn",
@@ -26,17 +27,25 @@
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "jsx-a11y/alt-text": "warn",
-    "jsx-a11y/aria-role": "warn"
+    "jsx-a11y/aria-role": "warn",
+    "jsonc/comma-dangle": ["warning", "only-multiline"],
   },
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
   },
   "settings": {
     "react": {
-      "version": "detect"
-    }
+      "version": "detect",
+    },
   },
-  "ignorePatterns": ["tsconfig.json", "tsconfig.base.json", "tsconfig.cjs.json", "custom.d.ts"]
+  "ignorePatterns": [
+    "tsconfig.json",
+    "tsconfig.base.json",
+    "tsconfig.cjs.json",
+    "custom.d.ts",
+    "*.test.ts",
+    ".eslintrc",
+  ],
 }
