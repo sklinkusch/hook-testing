@@ -45,7 +45,7 @@
     "custom.d.ts",
     "*.test.ts",
     ".eslintrc",
-    "dist/types/index.d.ts",
+    "dist",
     "jest.config.ts",
   ],
 }
