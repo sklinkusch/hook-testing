@@ -5,16 +5,25 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js",
-    "default": "./dist/esm/index.js"
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "publishConfig": {
+    "registry": "http://0.0.0.0:4873"
   },
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "build-cjs": "tsc --project tsconfig.cjs.json",
-    "build-esm": "tsc --project tsconfig.json",
+    "build-cjs": "tsc -p tsconfig.cjs.json",
+    "build-esm": "tsc -p tsconfig.json",
     "build": "npm run build-cjs && npm run build-esm",
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:sklinkusch/hook-testing.git"
   },
   "keywords": [],
   "author": "",
@@ -49,5 +58,10 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@mui/lab": "^5.0.0-alpha.165",
+    "react-admin": "^4.16.10",
+    "usehooks-ts": "^2.14.0"
   }
 }
