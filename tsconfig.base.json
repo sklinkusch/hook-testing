@@ -15,5 +15,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "*.test.ts", ".eslintrc", ".prettierrc"],
+  "include": ["src", "index.d.ts", "setupTests.ts"]
 }

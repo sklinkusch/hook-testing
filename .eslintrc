@@ -8,7 +8,7 @@
       "jsx": true,
     },
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "jsx-a11y", "prettier", "jsonc"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "jsx-a11y", "prettier"],
   "extends": [
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -17,7 +17,6 @@
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:jsonc/recommended",
     "prettier",
   ],
   "rules": {
@@ -28,7 +27,6 @@
     "prefer-arrow-callback": "off",
     "jsx-a11y/alt-text": "warn",
     "jsx-a11y/aria-role": "warn",
-    "jsonc/comma-dangle": ["warning", "only-multiline"],
   },
   "env": {
     "browser": true,
@@ -47,5 +45,7 @@
     "custom.d.ts",
     "*.test.ts",
     ".eslintrc",
+    "dist/types/index.d.ts",
+    "jest.config.ts",
   ],
 }
