@@ -1,21 +1,26 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
     "allowJs": true,
-    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
     "declaration": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": false,
     "jsx": "react-jsx",
-
-    /* Linting */
+    "lib": ["esnext"],
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "traceResolution": false,
+    "types": ["node", "jest"]
   },
+  "compileOnSave": false,
   "exclude": ["node_modules", "dist", "*.test.ts", ".eslintrc", ".prettierrc"],
   "include": ["src", "index.d.ts", "setupTests.ts"]
 }

@@ -47,5 +47,6 @@
     ".eslintrc",
     "dist",
     "jest.config.ts",
+    "__test__",
   ],
 }
