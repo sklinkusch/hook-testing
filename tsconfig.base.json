@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "inlineSourceMap": false,
     "jsx": "react-jsx",
-    "lib": ["esnext"],
+    "lib": ["DOM", "esnext"],
     "listEmittedFiles": false,
     "listFiles": false,
     "moduleResolution": "Node",
